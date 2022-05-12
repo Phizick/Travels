@@ -17,14 +17,16 @@ function closePopup(item) {
 
 let h = false;
 
-popupInfoBtn.addEventListener('click', () => {    
+popupInfoBtn.addEventListener('click', () => {
+    openPopup(popupInfo);
     if (h = true) {
         slideup.play();
-        setTimeout(closePopup, 1100, popupInfo);
+        
     } else {
         slidedown.play();
-        openPopup(popupInfo);
+        
     };
+    console.log(h);
 }
 );
 
