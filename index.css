@@ -171,7 +171,7 @@
 }
 
 .explore__btn {
-    z-index: 8;
+    z-index: 4;
     position: absolute;
     bottom: 32px;
     left: calc(50% - 64px);
@@ -220,12 +220,31 @@
 .popup__container {
     position: relative;
     z-index: 6;
-    height: 1100px;
-    width: 920px;
+    height: 1000px;
+    width: 85vw;
     background-color: #ffffff;
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
     padding-top: 20px;
-    transform:translateY(-1050px);     
+    margin-left: 300px;
+    /* transform:translateY(1050px);      */
     cursor: default;
+  }
+
+  .popup__close-button {
+    position: absolute;
+    left: -70px;
+    top: 650px;
+    transition: linear 0.5s;
+    padding: 0;
+    width: 70px;
+    height: 62px;
+    background-image: url("data:image/svg+xml,%3C?xml version='1.0' encoding='utf-8'?%3E %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M 19 8 L 19 11 L 1 11 L 1 13 L 19 13 L 19 16 L 23 12 L 19 8 z' fill='white'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transform: rotate(90deg);
   }
