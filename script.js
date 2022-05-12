@@ -4,6 +4,53 @@ const slider = document.querySelector(".slider");
 const nextBtn = slider.querySelector(".next");
 const prevBtn = slider.querySelector(".prev");
 const items = slider.querySelectorAll(".item");
+const popupInfo = document.querySelector('.popup__info');
+const popupInfoBtn = document.querySelector('.explore__btn');
+
+function openPopup(item) {
+    item.classList.add("popup_opened");
+};
+
+function closePopup(item) {
+    item.classList.remove("popup_opened");
+};
+
+let h = false;
+
+popupInfoBtn.addEventListener('click', () => {    
+    if (h = true) {
+        slideup.play();
+        setTimeout(closePopup, 1100, popupInfo);
+    } else {
+        slidedown.play();
+        openPopup(popupInfo);
+    };
+}
+);
+
+
+let slidedown = anime({
+    targets: '.popup__container',
+    translateY: ['-260','-1050px'],
+    easing: 'easeOutCirc',
+   duration: 1100,
+    autoplay: false,
+    h : true,
+
+})
+
+let slideup = anime({
+    targets: '.popup__container',
+    translateY: ['-1050px','-260px'],
+    autoplay: false,
+    easing: 'easeOutCirc',
+  duration: 1100,
+ 
+   
+})
+
+
+
 
 let current = 0;
 
