@@ -31,7 +31,7 @@ function animate(current, next, callback) {
     timeList
         .add({
             targets: currentText,
-            translateY: [0, "-.75em"],
+            translateY: [0, "-12px"],
             opacity: [1, 0],
             easing: "easeInCubic",
             duration: t,
@@ -232,7 +232,7 @@ function animate(current, next, callback) {
         .add(
             {
                 targets: nextText,
-                translateY: [".75em", 0],
+                translateY: ["12px", 0],
                 translateZ: 0,
                 opacity: [0, 1],
                 easing: "easeInCubic",
